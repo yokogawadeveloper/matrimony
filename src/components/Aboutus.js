@@ -8,6 +8,7 @@ const Aboutus = () => {
 
     return (
         <>
+            <div className='bordersection'></div>
             <section className="common-section our-services">
                 <div className="container mb-5">
                     <div className="row">
@@ -17,7 +18,7 @@ const Aboutus = () => {
 
                         {/*---1Section right side data-----*/}
                         <div className="col-12 col-lg-7 our-services-list">
-                            <h1 className="main-heading">Choose by Interests, Location and other relevant filters</h1>
+                            <h1 className="main-heading text-light">Choose by Interests, Location and other relevant filters</h1>
 
                             {aboutData.map((curElem) => {
                                 const { id, title, info } = curElem;
@@ -25,7 +26,7 @@ const Aboutus = () => {
                                     <div className="row our-services-info" key={id}>
                                         <div className="col-1 our-services-number">{id}</div>
                                         <div className="col-10 our-services-data">
-                                            <h2>{title}</h2>
+                                            <h2 className='text-light'>{title}</h2>
                                             <p className="main-hero-para">{info}</p>
                                         </div>
                                     </div>
@@ -39,13 +40,14 @@ const Aboutus = () => {
                 </div>
             </section>
 
+            {/* <div className='bordersection'></div> */}
             {/* -----------2nd part of about section----------*/}
             <section className="common-section our-services our-services-rightside">
                 <div className="container mb-5">
                     <div className="row">
                         {/*---1Section right side data-----*/}
                         <div className="col-12 col-lg-6 our-services-rightside-content d-flex justify-content-center align-items-start flex-column">
-                            <h1 className="main-heading">Connect with matches the way you like</h1>
+                            <h1 className="main-heading text-light">Connect with matches the way you like</h1>
 
                             {connectData.map((curElem) => {
                                 const { id, title, info } = curElem;
@@ -53,7 +55,7 @@ const Aboutus = () => {
                                     <div className="row our-services-info" key={id}>
                                         <div className="col-1 our-services-number">{id}</div>
                                         <div className="col-10 our-services-data">
-                                            <h2>{title}</h2>
+                                            <h2 className='text-light'>{title}</h2>
                                             <p className="main-hero-para">{info}</p>
                                         </div>
                                     </div>
@@ -71,6 +73,7 @@ const Aboutus = () => {
                     </div>
                 </div>
             </section>
+            {/* <div className='bordersection'></div> */}
              {/* -----------3nd part of about section----------*/}
             <section className="common-section our-services">
                 <div className="container mb-5">
@@ -81,7 +84,7 @@ const Aboutus = () => {
 
                         {/*---1Section right side data-----*/}
                         <div className="col-12 col-lg-7 our-services-list">
-                            <h1 className="main-heading">AI-driven match recommendations to suit your preferences</h1>
+                            <h1 className="main-heading text-light">AI-driven match recommendations to suit your preferences</h1>
 
                             {drivenData.map((curElem) => {
                                 const { id, title, info } = curElem;
@@ -89,7 +92,7 @@ const Aboutus = () => {
                                     <div className="row our-services-info" key={id}>
                                         <div className="col-1 our-services-number">{id}</div>
                                         <div className="col-10 our-services-data">
-                                            <h2>{title}</h2>
+                                            <h2 className='text-light'>{title}</h2>
                                             <p className="main-hero-para">{info}</p>
                                         </div>
                                     </div>

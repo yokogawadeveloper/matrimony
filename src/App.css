@@ -10,7 +10,7 @@
 }
 
 :root {
-  --bgcolor: #f1f5fd;
+  --bgcolor: #090017;
   --primary-color: #6f5de7;
   --text-color: #828286;
   --main-text-color: #333333;
@@ -33,13 +33,19 @@ h5,
 h6 {
   color: #333333;
 }
-
+body{
+  background-color: #1a012b;
+}
+.bordersection{
+  border-top: 7px solid #852855;
+  border-radius: 3px;
+}
 /* --------------------------------- navbar css style starts 
                         -------------------------------------------------------*/
 
 .navbar-bg {
   background-color: var(--bgcolor);
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
   z-index: 99;
   position: relative;
 }
@@ -59,16 +65,16 @@ h6 {
 }
 
 .navbar li a:hover {
-  color: var(--primary-color) !important;
+  color: #fff !important;
   text-shadow: 0 0.2rem 0.3rem rgba(183, 171, 255, 0.5);
 }
 
 .btn-style {
   width: 13rem;
   /* height: 3.7rem; */
-  border-radius: 2rem;
+  border-radius: .7rem;
   color: #fff;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   text-transform: capitalize;
   font-size: 1.6rem;
 }
@@ -95,6 +101,12 @@ h6 {
   color: #fff;
   background-color: var(--primary-color);
   text-transform: capitalize;
+}
+
+a.nav-link{
+  background: transparent;
+  color: #fff !important;
+  font-weight: 500;
 }
 
 /* --------------------------------- Navbar ends  
@@ -166,6 +178,10 @@ header {
   
 }
 
+.display-2 {
+  font-size: 4.5rem;
+  color: #bcb1b1;
+}
 
 /* right side of hero section  */
 
@@ -296,6 +312,22 @@ header {
   margin: 1rem 0;
 }
 
+.serviceicon{
+  width: 31%;
+    background: #3e2080;
+    border-radius: 70px;
+    height: 64%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product_descriptions{
+  font-size: 14px;
+  color: #fff;
+  margin: 20px 80px !important;
+}
+
 /* 2nd section of about us  */
 
 .our-services-rightside {
@@ -314,6 +346,7 @@ header {
 .service-main-container {
   margin-top: 5rem;
   padding: 5rem 0;
+  background-color: #1a012b;
 }
 
 .service-main-container .main-heading {
@@ -715,17 +748,28 @@ footer .main-hero-para{
 
 button.accordion-button.collapsed, .accordion-button {
     font-size: 16px !important;
-    /* color: #828286 !important; */
     padding: 12px;
 }
-.formlable{
-  font-size: 1.6rem;
-  font-weight: lighter;
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
 }
-.form-control{
-    height: 4rem !important;
-    border-radius: 0.5rem;   
-    font-size: 1.4rem;
-    padding-left: 1rem;
-    font-weight: lighter;
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.img-fluid-logo{
+  max-width: 25% !important;
+    height: auto;
 }

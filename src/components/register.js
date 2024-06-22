@@ -1,91 +1,24 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import Search from "./Search";
-import BookData from "../MOCK_DATA.json";
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import Form from 'react-bootstrap/Form';
+import React from 'react';
 import './register.css';
-// import logo from '../../public/image/records-new-1.svg';
+import Button from 'react-bootstrap/Button';
+import { Form } from 'react-bootstrap';
 
-const Navbar = () => {
-  const [show, setShow] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const handleClose = () => setShowModal(false);
-  const handleShow = () => setShowModal(true);
+const Register = ({ isOpen, onClose }) => {
+    const handleBackdropClick = (event) => {
+        if (event.target === event.currentTarget) {
+            onClose();
+        }
+    };
 
-  return (
-    <>
-      <section className="navbar-bg">
-        <nav className="navbar navbar-expand-lg navbar-light ">
-          <div className="container">
-            <NavLink className="navbar-brand" to="/">
-              <img src={`${process.env.PUBLIC_URL}/image/logo.png`} alt="logo" class="img-fluid-logo" />
-            </NavLink>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              onClick={() => setShow(!show)}>
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className={`collapse navbar-collapse ${show ? "show" : ""}`} id="navbarSupportedContent">
-              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                {/* Uncomment and adjust routes as needed */}
-                <li className="nav-item">
-                  <NavLink className="nav-link active" aria-current="page" to="/">
-                    Home
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/service">
-                    About Us
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/about">
-                   Price 
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/contact">
-                   Login
-                  </NavLink>
-                </li> 
-              </ul>
-              <form className="d-flex">
-                <Button className="btn btn-style" onClick={handleShow}>
-                 Start for free
-                </Button>
-                {/* <NavLink className="btn btn-style" to="/contact">
-                  Login
-                </NavLink> */}
-                <div className="App">
-                  <Search placeholder="Enter a Book Name..." data={BookData} />
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </section>
-     <section className="form">
-      <Modal
-        show={showModal}
-        onHide={handleClose}
-        backdrop="static"
-        keyboard={false}
-        size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>Register</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
+    if (!isOpen) return null;
+
+    return (
+      <div className="modal-overlay" onClick={handleBackdropClick}>
+        <div className="modal-content">
+          <button className="modal-close" onClick={onClose}>
+            &times;
+          </button>
+          <h2>Register</h2>
           <form className="mx-3">
             <div className="row modalheight">
               <div className="col-sm-12 col-md-6">
@@ -436,14 +369,12 @@ const Navbar = () => {
             </div>
             <div className="d-flex justify-content-center py-3">
             <Button variant="primary" className="mx-2 fs-4">Submit</Button>
-            <Button variant="danger" className="fs-4" onClick={handleClose}>Cancel</Button>
+            <Button variant="danger" className="fs-4">Cancel</Button>
             </div>
           </form>
-        </Modal.Body>
-      </Modal>
-     </section>
-    </>
-  );
-};
-
-export default Navbar;
+        </div>
+      </div>
+    );
+  };
+  
+  export default Register;

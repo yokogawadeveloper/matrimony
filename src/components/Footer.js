@@ -8,166 +8,88 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-lg-12 mx-auto">
+                            
                             <div className="row">
-                                <div className="col-6 col-lg-3">
-                                    <h3 className='text-light'>Regional Matrimony Services</h3>
-                                    <ul className='px-0'>
-                                        <li>
-                                            <NavLink to="/">Assamese Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Bengali Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Bihari Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Gujarati Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Hindi Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Kannada Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Kerala Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Marathi Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Marwadi Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Oriya Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Parsi Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Punjabi Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Rajasthani Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Sindhi Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Tamil Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Telugu Matrimony</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Urdu Matrimony</NavLink>
-                                        </li>
-                                    </ul>
+                                <div className='col-lg-3'></div>
+                                <div className='col-lg-9 mb-2'>
+                                <div className='d-flex'><h3 className='text-light'>SWmatrimony.com</h3></div>
+                                <div className='d-flex'><h3 className='text-light'>Email ID:</h3><p className='mb-1 main-hero-para text-light ms-2'> anchepedhematrimony@gmail.com</p></div>
+                                <div className='d-flex'><h3 className='text-light'>Contact Number:</h3> <p className='mb-1 main-hero-para text-light ms-2'> 7619331333, 7619332333</p></div>
+                                <div className='d-flex'><h3 className='text-light'>address: </h3> <p className='mb-1 main-hero-para text-light w-100 ms-2'> #165, FIRST FLOOR,VASUNDHARA LAYOUT KAMMASANDRA,SAMPIGE NAGAR
+                                BANGALORE560100</p></div>
+                                </div>
+                                
+                                <div className="col-6 col-lg-3 mt-2">
+                                   <div>
+                                   <img src={`${process.env.PUBLIC_URL}/image/logo.png`} alt="" style={{width: "100%"}}/>
+                                   </div>
+                                   <h3 className="text-light mx-3 mt-2">SWmatrimony.com</h3>
+                                   
                                 </div>
                                 <div className="col-6 col-lg-3">
-                                    <h3 className='text-light'>Help & Support</h3>
+                                    <h3 className='text-light'>Need Help?</h3>
                                     <ul className='px-0'>
                                         <li>
-                                            <NavLink to="/">24x7 Live help</NavLink>
+                                            <NavLink to="/">Member Login</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/">Contact us</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Feedback</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">FAQs</NavLink>
-                                        </li>
-                                    </ul>
-                                    <h3 className='text-light'>Our other Services</h3>
-                                    <ul className='px-0'>
-                                        <li>
-                                            <NavLink to="/">EliteMatrimony.com</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Muslim match App Store</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Muslim match Play Store</NavLink>
-                                        </li>
-                                    </ul>
-                                    <h3 className='text-light'>Our Wedding Services</h3>
-                                    <ul className='px-0'>
-                                        <li>
-                                            <NavLink to="/">Mandap.com</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">WeddingBazaar.com</NavLink>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                                <div className="col-6 col-lg-3">
-                                    <h3 className='text-light'>Information</h3>
-                                    <ul className='px-0'>
-                                        <li>
-                                            <NavLink to="/">About Us</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Awards</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Milestones</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Register Free</NavLink>
+                                            <NavLink to="/">Sign Up</NavLink>
                                         </li>
                                         <li>
                                             <NavLink to="/">Partner Search</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/">Member Login</NavLink>
+                                            <NavLink to="/">How to Use Shaadi.com </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/">Success stories</NavLink>
+                                            <NavLink to="/">Premium Memberships </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/">Payment Options</NavLink>
+                                            <NavLink to="/">Customer Support</NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to="/">Site Map</NavLink>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="col-6 col-lg-3">
+                                <div className='d-flex align-items-center'><h3 className='text-light'>Contact Number: <p className='mb-1 main-hero-para text-light'>7619331333, 7619332333</p></h3></div>
+                                    <h3 className='text-light'>Company</h3>
+                                    <ul className='px-0'>
+                                        <li>
+                                            <NavLink to="/">About Us</NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to="/"> Shaadi Blog</NavLink>
                                         </li>
                                         <li>
                                             <NavLink to="/">Careers</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/">Media Room</NavLink>
+                                            <NavLink to="/">Awards & Recognition </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/">TV Commercials</NavLink>
+                                            <NavLink to="/">Cov-Aid</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/">Advertise with us</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Terms & Conditions</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Privacy Policy</NavLink>
+                                            <NavLink to="/">Contact Us</NavLink>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className='col-6 col-lg-3'>
-                                    <h3 className='text-light'>Related Matrimony Services</h3>
+                                    <h3 className='text-light'> Privacy & You</h3>
                                     <ul className='px-0'>
                                         <li>
-                                            <NavLink to="/">HappyMarriages.com</NavLink>
+                                            <NavLink to="/">Terms of Use</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/">Matrimonial Sites</NavLink>
+                                            <NavLink to="/">Privacy Policy</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/">Matrimonial Websites</NavLink>
+                                            <NavLink to="/">Be Safe Online</NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/">Bharat Matrimony Branches</NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to="/">Kannada Jataka</NavLink>
+                                            <NavLink to="/">Report Misuse</NavLink>
                                         </li>
                                     </ul>
                                 </div>
@@ -176,13 +98,13 @@ const Footer = () => {
                             <hr />
                             <div className="mt-5 row">
                              <div className='col-sm-12 col-lg-6'>
-                             <p className="main-hero-para w-100">
-                             This website is strictly for matrimonial purpose only and not a dating website.
+                             <p className="main-hero-para text-light w-100">
+                             Address: #165, FIRST FLOOR,VASUNDHARA LAYOUT KAMMASANDRA,SAMPIGE NAGAR BANGALORE560100
                              </p>
                              <p className="main-hero-para w-100">copyright © 2024. All rights reserved.</p>
                              </div>
                              <div className='col-sm-12 col-lg-3'>
-                              <p className='mb-0 main-hero-para'>The Limca Book of records Highest Number of Marriages</p>
+                              <p className='mb-0 main-hero-para text-light'>SWmatrimony.com</p>
                              </div>
                              <div className='col-sm-12 col-lg-3'>
                              <h3 className='text-light'>Follow Us</h3>

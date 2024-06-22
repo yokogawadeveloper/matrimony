@@ -1,40 +1,75 @@
 import React, { useState } from 'react'
 import workapi from './API/workApi.js';
+import './Search.css'
 const Body = () => {
 
     const [workData, setWorkData] = useState(workapi);
     const headingStyle = {
-        borderRight:'1px solid #d4c9c9'
-      };
+        borderRight: '1px solid #d4c9c9'
+    };
     return (
         <>
-            <section>
-                <div className="work-container container">
-                    {/* <h1 className="main-heading text-center">How does it work</h1> */}
-                    <div className="row">
-                        {
-                            workData.map((curElem ) => {
-                                const{id, logo, title, info} =curElem;
-                                return (
-                                    <>
-                                        <div className="col-12 col-lg-4 text-center work-container-subdiv" key={id}>
-                                            <img className='py-3' src={logo} alt='log'/>
-                                            <h2 className="sub-heading">{title}</h2>
-                                            <p className="main-hero-para w-100">{info}</p>
-                                        </div>
-                                    </>
-                                );
-                            })
-                        }
+        <div className='bordersection '></div>
+            <section className='container-fluid py-5'>
+                <div className='row mx-3'>
+                    <div className='col-md-4'>
+                        <div class="product_card">
+                            <div class="add_to_wishlist">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="image pt-3 px-3">
+                                <img src={`${process.env.PUBLIC_URL}/image/images3.jpeg`} alt=""/>
+                            </div>
+                            <div class="product_info">
+                                <h2 class="product_name text-center">
+                                    Sajid & Sonal
+                                </h2>
+                                <p class="product_description text-center px-2">
+                                marriage Planning is in progress and a big thank you to Shaadi.com both 
+                                of us as we have found our better half /soul mates 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-md-4'>
+                        <div class="product_card">
+                            <div class="add_to_wishlist">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="image pt-3 px-3">
+                                <img src={`${process.env.PUBLIC_URL}/image/images2.jpeg`} alt=""/>
+                            </div>
+                            <div class="product_info">
+                                <h2 class="product_name text-center">
+                                    Sajid & Sonal
+                                </h2>
+                                <p class="product_description text-center px-2">
+                                marriage Planning is in progress and a big thank you to Shaadi.com both 
+                                of us as we have found our better half /soul mates 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-md-4'>
+                        <div class="product_card">
+                            <div class="add_to_wishlist">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="image pt-3 px-3">
+                                <img src={`${process.env.PUBLIC_URL}/image/images3.jpeg`} alt=""/>
+                            </div>
+                            <div class="product_info">
+                                <h2 class="product_name text-center">
+                                    Sajid & Sonal
+                                </h2>
+                                <p class="product_description text-center px-2">
+                                marriage Planning is in progress and a big thank you to Shaadi.com both 
+                                of us as we have found our better half /soul mates 
+                                </p>
+                            </div>
+                        </div>
 
                     </div>
-                    <div className="col-12 col-lg-12  mt-4">
-                                           <div className='text-center work-container-subdiv mx-5 d-flex align-items-center justify-content-between'>
-                                           <img className='py-3' src="https://imgs.bharatmatrimony.com/bmimgs/homepage-revamp-images/limca-records-img-new.png" alt='log' style={headingStyle}/>
-                                          
-                                          <p className="main-hero-para w-100">Featured in the Limca Book of Records for highest number of documented marriages online</p>
-                                           </div>
-                                        </div>
                 </div>
             </section>
         </>
